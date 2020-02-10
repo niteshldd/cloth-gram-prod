@@ -15,7 +15,7 @@
                 "containerPort": 8000
               }
             ],
-            "memory": 950
+            "memory": 800
           }
         ]
       }
