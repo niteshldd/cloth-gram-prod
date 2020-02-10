@@ -14,7 +14,8 @@
                 "hostPort": 80,
                 "containerPort": 8000
               }
-            ]
+            ],
+            "memory": 950
           }
         ]
       }
