@@ -1,12 +1,12 @@
 {
-    "AWSEBDockerrunVersion": 2,
+    "AWSEBDockerrunVersion": 3,
     "containerDefinitions": [
         {
             "name": "web",
             "image": "niteshldd/clothgram:latest",
             "hostname": "web",
             "command": [
-                 "python3 manage.py runserver 0.0.0.0:8000"
+                 "python manage.py runserver 0.0.0.0:8000"
                 ],
             "essential": true,
             "portMappings": [
