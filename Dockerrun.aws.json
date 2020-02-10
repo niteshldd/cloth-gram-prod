@@ -5,7 +5,7 @@
             "name": "web",
             "image": "niteshldd/clothgram:latest",
             "hostname": "web",
-            "command": [{"bash -c":"python manage.py migrate --no-input && python3 manage.py collectstatic --noinput && python3 manage.py populatedb --createsuperuser && python manage.py runserver 0.0.0.0:8000 && celery -A saleor worker --app=saleor.celeryconf:app --loglevel=info"}],
+            "command": ["python manage.py migrate --no-input", "python3 manage.py collectstatic --noinput"],
             "essential": true,
             "portMappings": [
               {
