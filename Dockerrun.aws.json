@@ -3,9 +3,11 @@
     "containerDefinitions": [
         {
             "name": "web",
-            "image": "niteshldd/clothgram:latest",
+            "image": "mirumee/saleor:latest",
             "hostname": "web",
-            "command": ["python manage.py migrate --no-input", "python3 manage.py collectstatic --noinput"],
+            "command": [
+                 "python manage.py runserver 0.0.0.0:8000"
+                ],
             "essential": true,
             "portMappings": [
               {
