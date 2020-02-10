@@ -1,0 +1,19 @@
+{
+    "AWSEBDockerrunVersion": 2,
+    "containerDefinitions": [
+        {
+            "name": "web",
+            "image": "niteshldd/clothgram:latest",
+            "hostname": "web",
+            "command": ["bash -c python manage.py migrate --no-input && python3 manage.py collectstatic --noinput && python3 manage.py populatedb --createsuperuser && python manage.py runserver 0.0.0.0:8000 && celery -A saleor worker --app=saleor.celeryconf:app --loglevel=info"],
+            "essential": true,
+            "portMappings": [
+              {
+                "hostPort": 80,
+                "containerPort": 8000
+              }
+            ],
+            "memory": 500
+          }
+        ]
+      }
