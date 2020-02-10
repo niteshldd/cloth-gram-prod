@@ -3,10 +3,10 @@
     "containerDefinitions": [
         {
             "name": "web",
-            "image": "mirumee/saleor:latest",
+            "image": "niteshldd/clothgram:latest",
             "hostname": "web",
             "command": [
-                 "python manage.py runserver 0.0.0.0:8000"
+                 "python3 manage.py runserver 0.0.0.0:8000"
                 ],
             "essential": true,
             "portMappings": [
