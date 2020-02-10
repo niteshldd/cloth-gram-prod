@@ -1,11 +1,11 @@
 {
-    "AWSEBDockerrunVersion": 3,
+    "AWSEBDockerrunVersion": 2,
     "containerDefinitions": [
         {
             "name": "web",
             "image": "niteshldd/clothgram:latest",
             "hostname": "web",
-            "command": [
+            "CMD": [
                  "python manage.py runserver 0.0.0.0:8000"
                 ],
             "essential": true,
