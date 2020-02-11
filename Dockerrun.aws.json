@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
             "name": "web",
-            "image": "niteshldd/clothgram:nitesh",
+            "image": "niteshldd/clothgram:nitesh01",
             "hostname": "web",
             "essential": true,
             "portMappings": [
