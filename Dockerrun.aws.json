@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
             "name": "web",
-            "image": "niteshldd/clothgram:latest",
+            "image": "niteshldd/clothgram:nitesh",
             "hostname": "web",
             "workingDirectory": "/app/",
             "COMMAND": [
