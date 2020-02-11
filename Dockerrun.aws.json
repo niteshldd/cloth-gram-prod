@@ -5,10 +5,6 @@
             "name": "web",
             "image": "niteshldd/clothgram:nitesh",
             "hostname": "web",
-            "workingDirectory": "/app/",
-            "COMMAND": [
-                "python3", "manage.py", "runserver 0.0.0.0:8000"
-                ],
             "essential": true,
             "portMappings": [
               {
@@ -16,7 +12,7 @@
                 "containerPort": 8000
               }
             ],
-            "memory": 500
+            "memory": 700
           }
         ]
       }
