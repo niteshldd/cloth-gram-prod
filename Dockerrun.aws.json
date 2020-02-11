@@ -13,6 +13,22 @@
               }
             ],
             "memory": 750
+          },
+          {
+            "name": "storefront",
+            "image": "niteshldd/saleor-storefront:latest",
+            "hostname": "web",
+            "links": [
+              "web"
+          ],
+            "essential": true,
+            "portMappings": [
+              {
+                "hostPort": 8000,
+                "containerPort": 80
+              }
+            ],
+            "memory": 150
           }
         ]
       }
